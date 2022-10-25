@@ -1,0 +1,6 @@
+devel_space: /home/varun/itchyimprovement/devel
+install: false
+install_space: /home/varun/itchyimprovement/install
+profile: default
+source_space: /home/varun/itchyimprovement/src
+workspace: /home/varun/itchyimprovement
