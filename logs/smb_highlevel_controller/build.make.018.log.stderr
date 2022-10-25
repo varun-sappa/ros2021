@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o: in function `main':
+smb_highlevel_controller_node.cpp:(.text+0x1a3): undefined reference to `smb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()'
+/usr/bin/ld: smb_highlevel_controller_node.cpp:(.text+0x263): undefined reference to `smb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()'
+/usr/bin/ld: CMakeFiles/smb_highlevel_controller.dir/src/SmbHighlevelController.cpp.o: in function `smb_highlevel_controller::SmbHighlevelController::SmbHighlevelController(ros::NodeHandle&)':
+SmbHighlevelController.cpp:(.text+0x58): undefined reference to `vtable for smb_highlevel_controller::SmbHighlevelController'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:130: /home/varun/itchyimprovement/devel/.private/smb_highlevel_controller/lib/smb_highlevel_controller/smb_highlevel_controller] Error 1
+make[1]: *** [CMakeFiles/Makefile2:943: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

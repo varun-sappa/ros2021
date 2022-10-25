@@ -1,0 +1,20 @@
+[35m[1mConsolidate compiler generated dependencies of target smb_highlevel_controller[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/smb_highlevel_controller.dir/src/SmbHighlevelController.cpp.o[0m
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:[m[K In constructor ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::SmbHighlevelController(ros::NodeHandle&)[m[K’:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:6:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController[m[K’ does not have any field named ‘[01m[KNodeHandle[m[K’
+    6 |     : [01;31m[KNodeHandle[m[K(nh) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:10:11:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope; did you mean ‘[01m[KnodeHandle_[m[K’?
+   10 |     if ( ![01;31m[KnodeHandle[m[K.getParam("subscriber_topic", topic)
+      |           [01;31m[K^~~~~~~~~~[m[K
+      |           [32m[KnodeHandle_[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:17:18:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope; did you mean ‘[01m[KnodeHandle_[m[K’?
+   17 |     subscriber = [01;31m[KnodeHandle[m[K.subscribe(topic, queue_size,
+      |                  [01;31m[K^~~~~~~~~~[m[K
+      |                  [32m[KnodeHandle_[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:18:10:[m[K [01;31m[Kerror: [m[K‘[01m[KHuskyHighlevelController[m[K’ has not been declared
+   18 |         &[01;31m[KHuskyHighlevelController[m[K::LaserCallback, this);
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:90: CMakeFiles/smb_highlevel_controller.dir/src/SmbHighlevelController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:943: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

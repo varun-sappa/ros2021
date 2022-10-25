@@ -1,0 +1,44 @@
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:5:71:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Ksmb_highlevel_controller[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+    5 | smb_highlevel_controller::smb_highlevel_controller(ros::NodeHandle& nh[01;31m[K)[m[K
+      |                                                                       [01;31m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:5:71:[m[K [01;31m[Kerror: [m[K‘[01m[Kint smb_highlevel_controller::smb_highlevel_controller(ros::NodeHandle&)[m[K’ should have been declared inside ‘[01m[Ksmb_highlevel_controller[m[K’
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:[m[K In function ‘[01m[Kint smb_highlevel_controller::smb_highlevel_controller(ros::NodeHandle&)[m[K’:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:6:7:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+    6 |     : [01;31m[KnodeHandle[m[K(nh) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:10:11:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope
+   10 |     if ( ![01;31m[KnodeHandle[m[K.getParam("subscriber_topic", topic)
+      |           [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:17:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscriber[m[K’ was not declared in this scope
+   17 |     [01;31m[Ksubscriber[m[K = nodeHandle.subscribe(topic, queue_size,
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:17:18:[m[K [01;31m[Kerror: [m[K‘[01m[KnodeHandle[m[K’ was not declared in this scope
+   17 |     subscriber = [01;31m[KnodeHandle[m[K.subscribe(topic, queue_size,
+      |                  [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:18:36:[m[K [01;31m[Kerror: [m[K‘[01m[KLaserCallback[m[K’ is not a member of ‘[01m[Ksmb_highlevel_controller[m[K’
+   18 |         &smb_highlevel_controller::[01;31m[KLaserCallback[m[K, this);
+      |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:18:51:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   18 |         &smb_highlevel_controller::LaserCallback, [01;31m[Kthis[m[K);
+      |                                                   [01;31m[K^~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:20:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+   20 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:[m[K At global scope:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:23:52:[m[K [01;31m[Kerror: [m[K‘[01m[Ksensor_msgs[m[K’ does not name a type
+   23 | void smb_highlevel_controller::LaserCallback(const [01;31m[Ksensor_msgs[m[K::LaserScan &msg) {
+      |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:23:75:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+   23 | void smb_highlevel_controller::LaserCallback(const sensor_msgs::LaserScan [01;31m[K&[m[Kmsg) {
+      |                                                                           [01;31m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:23:74:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+   23 | void smb_highlevel_controller::LaserCallback[34m[K([m[Kconst sensor_msgs::LaserScan[01;31m[K [m[K[32m[K&[m[Kmsg) {
+      |                                             [34m[K~[m[K                            [01;31m[K^[m[K[32m[K~[m[K
+      |                                                                          [32m[K)[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:23:76:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[Kmsg[m[K’
+   23 | void smb_highlevel_controller::LaserCallback(const sensor_msgs::LaserScan &[01;31m[Kmsg[m[K) {
+      |                                                                            [01;31m[K^~~[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:90: CMakeFiles/smb_highlevel_controller.dir/src/SmbHighlevelController.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:943: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2

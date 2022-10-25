@@ -1,0 +1,23 @@
+In file included from [01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:1[m[K:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/include/smb_highlevel_controller/SmbHighlevelController.hpp:41:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual smb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’ cannot be overloaded with ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’
+   41 |  virtual [01;31m[K~[m[KSmbHighlevelController();
+      |          [01;31m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/include/smb_highlevel_controller/SmbHighlevelController.hpp:36:5:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’
+   36 |     [01;36m[K~[m[KSmbHighlevelController() = default;
+      |     [01;36m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:[m[K In constructor ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::SmbHighlevelController(ros::NodeHandle&)[m[K’:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/SmbHighlevelController.cpp:6:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController[m[K’ does not have any field named ‘[01m[KnodeHandle[m[K’
+    6 |     : [01;31m[KnodeHandle[m[K(nodeHandle) {
+      |       [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/src/smb_highlevel_controller_node.cpp:2[m[K:
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/include/smb_highlevel_controller/SmbHighlevelController.hpp:41:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvirtual smb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’ cannot be overloaded with ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’
+   41 |  virtual [01;31m[K~[m[KSmbHighlevelController();
+      |          [01;31m[K^[m[K
+[01m[K/home/varun/itchyimprovement/src/smb_highlevel_controller/include/smb_highlevel_controller/SmbHighlevelController.hpp:36:5:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Ksmb_highlevel_controller::SmbHighlevelController::~SmbHighlevelController()[m[K’
+   36 |     [01;36m[K~[m[KSmbHighlevelController() = default;
+      |     [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:76: CMakeFiles/smb_highlevel_controller.dir/src/smb_highlevel_controller_node.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/smb_highlevel_controller.dir/build.make:90: CMakeFiles/smb_highlevel_controller.dir/src/SmbHighlevelController.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:943: CMakeFiles/smb_highlevel_controller.dir/all] Error 2
+make: *** [Makefile:146: all] Error 2
